@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Linear Deophantine Equation Calculator</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+
+   <link rel="stylesheet" href="./styles.css"/>
+   <!-- Mathjax -->
+   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+<body class="font-['Roboto_Mono'] text-white bg-black">
+   <section class="sm:max-w-sm max-w-xs mx-auto mt-16">
+      <!-- Title -->
+      <h1 class="text-blue-600 font-bold text-[2rem] leading-tight">Linear Diophantine Equation Calculator</h1>
+      <h2 class="">A handy smol calculator for all your university needs 👏</h2>
+      <!-- Formula -->
+      <p id="equation" class="my-8">$$\class{a-tag}{a}x + \class{b-tag}{b}y = \class{c-tag}{c}$$</p>
+      <!-- Input -->
+      <h2>Enter your equation:</h2>
+      <div class="grid grid-cols-3 my-2 gap-x-4">
+         <div class="flex w-full justify-between align px-4 bg-[#181818] rounded">
+            <p class="flex items-center">$$a$$</p>
+            <input type="number" placeholder="num" id="a" class="bg-[#181818] w-3/5 appearance-none outline-0 text-right truncate">
+         </div>
+         <div class="flex w-full justify-between align px-4 bg-[#181818] rounded">
+            <p class="flex items-center">$$b$$</p>
+            <input type="number" placeholder="num" id="b" class="bg-[#181818] w-3/5 appearance-none outline-0 text-right truncate">
+         </div>
+         <div class="flex w-full justify-between align px-4 bg-[#181818] rounded">
+            <p class="flex items-center">$$c$$</p>
+            <input type="number" placeholder="num" id="c" class="bg-[#181818] w-3/5 appearance-none outline-0 text-right truncate">
+         </div>
+      </div>
+      <!-- Output -->
+      <h2>Particuar Solution:</h2>
+      <div class="grid grid-cols-2 my-2 gap-x-4">
+         <div class="flex w-full justify-between align px-4 bg-[#181818] rounded">
+            <p class="flex items-center">$$x_0$$</p>
+            <p id="particular-x" class="flex items-center">🦑</p>
+         </div>
+         <div class="flex w-full justify-between align px-4 bg-[#181818] rounded">
+            <p class="flex items-center">$$y_0$$</p>
+            <p id="particular-y" class="flex items-center">🦑</p>
+         </div>
+      </div>
+      <h2>General Solution:</h2>
+      <div class="grid grid-cols-2 my-2 gap-x-4">
+         <div class="flex w-full justify-between align px-4 bg-[#181818] rounded">
+            <p class="flex items-center">$$x$$</p>
+            <p id="general-x" class="flex items-center">✨</p>
+         </div>
+         <div class="flex w-full justify-between align px-4 bg-[#181818] rounded">
+            <p class="flex items-center">$$y$$</p>
+            <p id="general-y" class="flex items-center">✨</p>
+         </div>
+      </div>
+   </section>
+</body>
+<script type="module" src="./scripts/script.js"></script>
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     messageStyle: "none"
+   });
+</script>
+</html>
